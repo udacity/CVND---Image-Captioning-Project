@@ -2,7 +2,6 @@
 
 # Instructions  
 1. clone this repo: https://github.com/cocodataset/cocoapi  
-  
 git clone https://github.com/cocodataset/cocoapi.git  
 
 2. setup (also described in the readme here)  
