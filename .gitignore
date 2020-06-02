@@ -4,3 +4,5 @@ data/
 __pycache__/
 annotations/
 .DS_Store
+*zh.ipynb
+*.pkl
