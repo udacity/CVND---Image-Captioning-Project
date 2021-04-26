@@ -1,5 +1,37 @@
 # CVND---Image-Captioning-Project
 
+
+This project demonstrates the usage of a combined CNN-RNN to generate captions from images. 
+It was completed as part of Udacity's Computer Vision Nano-degree. 
+
+
+# Installation 
+< Here's how to install this >
+
+# Demo 
+< Here's a demo of how it works. >
+From python 
+
+CLI ? 
+
+# Jupyter Notebooks
+
+
+
+# How it Works 
+
+< Explain the model .. etc .. >
+
+
+
+
+
+
+
+
+
+
+
 # Instructions  
 1. Clone this repo: https://github.com/cocodataset/cocoapi  
 ```
@@ -25,3 +57,4 @@ cd ..
   * **2014 Test images [41K/6GB]** (extract the test2014 folder and place at location cocoapi/images/test2014/)
 
 4. The project is structured as a series of Jupyter notebooks that are designed to be completed in sequential order (`0_Dataset.ipynb, 1_Preliminaries.ipynb, 2_Training.ipynb, 3_Inference.ipynb`).
+
