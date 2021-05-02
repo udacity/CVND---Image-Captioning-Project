@@ -4,16 +4,17 @@ import os.path
 from pycocotools.coco import COCO
 from collections import Counter
 
-class Vocabulary(object):
 
-    def __init__(self,
-        vocab_threshold,
-        vocab_file='./vocab.pkl',
-        start_word="<start>",
-        end_word="<end>",
-        unk_word="<unk>",
-        annotations_file='../cocoapi/annotations/captions_train2014.json',
-        vocab_from_file=False):
+class Vocabulary(object):
+    def __init__(
+            self,
+            vocab_threshold,
+            vocab_file='./vocab.pkl',
+            start_word="<start>",
+            end_word="<end>",
+            unk_word="<unk>",
+            annotations_file='../cocoapi/annotations/captions_train2014.json',
+            vocab_from_file=False):
         """Initialize the vocabulary.
         Args:
           vocab_threshold: Minimum word count threshold.
@@ -46,7 +47,7 @@ class Vocabulary(object):
             self.build_vocab()
             with open(self.vocab_file, 'wb') as f:
                 pickle.dump(self, f)
-        
+
     def build_vocab(self):
         """Populate the dictionaries for converting tokens to integers (and vice-versa)."""
         self.init_vocab()
@@ -81,7 +82,10 @@ class Vocabulary(object):
             if i % 100000 == 0:
                 print("[%d/%d] Tokenizing captions..." % (i, len(ids)))
 
-        words = [word for word, cnt in counter.items() if cnt >= self.vocab_threshold]
+        words = [
+            word for word, cnt in counter.items()
+            if cnt >= self.vocab_threshold
+        ]
 
         for i, word in enumerate(words):
             self.add_word(word)
