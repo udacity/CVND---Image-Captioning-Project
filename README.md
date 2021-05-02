@@ -24,12 +24,13 @@ conda activate image_caption
 pip install -r requirements.txt
 ```
 3. Run the Training Notebook
-<link to Notebook 1>
+
 [Training Notebook](1_Train_Model.ipynb)
 
 You could also skip this step and move to inference & use the pre-trained model. 
 
 4. Inference. Evaluate on Test Data.
+
 [Inference Notebook](2_Inference.ipynb)
 
 
