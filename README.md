@@ -28,8 +28,6 @@ python -m ipykernel install --user --name=image_caption
 ```
 3. Run the Training Notebook : [Training Notebook](1_Train_Model.ipynb)
 
-Note: one could also skip this step and move to Step 4. when using the pre-trained model .pkl files. 
-
 4. Inference. Evaluate on Test Data : [Inference Notebook](2_Inference.ipynb)
 
 
