@@ -3,8 +3,7 @@
 
 This project demonstrates the usage of a combined CNN-RNN to generate captions from images. 
 It was completed as part of Udacity's Computer Vision Nano-degree and is inspired by
-the paper - "Show and Tell : A Neural Image Caption Generator - ", but is not meant at all
-to reproduce their results. 
+the paper - [Show and Tell : A Neural Image Caption Generator - O.Vinyals et. al](https://arxiv.org/abs/1411.4555v2)  but is not meant at all to reproduce their results. 
 
 Here's a demo of some of the Generated captions. 
 
