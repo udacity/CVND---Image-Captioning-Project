@@ -18,7 +18,7 @@ An overview and example of the results.
 
 # How & Why it Works 
 
-!(images/encoder-decoder.png)
+![Encoder Decoder Model](images/encoder-decoder.png)
 
 ## Model
 The Encoder CNN is a pretrained ResNet50 with fixed ( non-trainable ) parameters. 
