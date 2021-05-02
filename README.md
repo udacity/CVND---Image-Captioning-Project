@@ -1,60 +1,40 @@
-# CVND---Image-Captioning-Project
+# Image Captioning Project
 
 
 This project demonstrates the usage of a combined CNN-RNN to generate captions from images. 
-It was completed as part of Udacity's Computer Vision Nano-degree. 
+It was completed as part of Udacity's Computer Vision Nano-degree and is inspired by
+the paper - "Show and Tell : A Neural Image Caption Generator - ", but is not meant at all to reproduce their results. 
+
+An overview and example of the results. 
 
 
-# Installation 
-< Here's how to install this >
+# Setup & Usage
 
-# Demo 
-< Here's a demo of how it works. >
-From python 
-
-CLI ? 
-
-# Jupyter Notebooks
+1. Download data
+2. Create and configure environment
+3. Run Training ( Can skip this step ). Notebook 1. 
+4. Evaluate on Test Data.               Notebook 2.
 
 
+# How & Why it Works 
 
-# How it Works 
+!(images/encoder-decoder.png)
 
-< Explain the model .. etc .. >
-
-
-
-
-
+## Model
+The Encoder CNN is a pretrained ResNet50 with fixed ( non-trainable ) parameters. 
+The Decoder RNN is composed of X layers of LSTM cells. 
 
 
+## Training
+The dataset is composed of ... etc. & this is how the network is trained. 
+
+
+## Inference
+I used a simple sampling based approach to caption generation. 
+In this the RNN is fed in the encoded image after passing through the CNN. 
+After that, the words are sampled one by one through the RNN until the maximum length of X is reached. 
 
 
 
 
-# Instructions  
-1. Clone this repo: https://github.com/cocodataset/cocoapi  
-```
-git clone https://github.com/cocodataset/cocoapi.git  
-```
-
-2. Setup the coco API (also described in the readme [here](https://github.com/cocodataset/cocoapi)) 
-```
-cd cocoapi/PythonAPI  
-make  
-cd ..
-```
-
-3. Download some specific data from here: http://cocodataset.org/#download (described below)
-
-* Under **Annotations**, download:
-  * **2014 Train/Val annotations [241MB]** (extract captions_train2014.json and captions_val2014.json, and place at locations cocoapi/annotations/captions_train2014.json and cocoapi/annotations/captions_val2014.json, respectively)  
-  * **2014 Testing Image info [1MB]** (extract image_info_test2014.json and place at location cocoapi/annotations/image_info_test2014.json)
-
-* Under **Images**, download:
-  * **2014 Train images [83K/13GB]** (extract the train2014 folder and place at location cocoapi/images/train2014/)
-  * **2014 Val images [41K/6GB]** (extract the val2014 folder and place at location cocoapi/images/val2014/)
-  * **2014 Test images [41K/6GB]** (extract the test2014 folder and place at location cocoapi/images/test2014/)
-
-4. The project is structured as a series of Jupyter notebooks that are designed to be completed in sequential order (`0_Dataset.ipynb, 1_Preliminaries.ipynb, 2_Training.ipynb, 3_Inference.ipynb`).
 
